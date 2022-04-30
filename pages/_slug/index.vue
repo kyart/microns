@@ -1,0 +1,36 @@
+<template>
+  <main class="main">
+    <h1 class="title">{{ title }}</h1>
+    <img :src="eyecatch.url"/>
+    <div class="post" v-html="content"></div>
+    <hr>
+    <p class="publishedAt">{{ publishedAt }}</p>
+  </main>
+</template>
+
+<script>
+import axios from 'axios'
+
+export default {
+  async asyncData({ params }) {
+    const { data } = await axios.get(
+      `https://northernscript.microcms.io/api/v1/blogs/${params.slug}`,
+      {
+        headers: { 'X-MICROCMS-API-KEY': '4c68f961f7d64e24b25d0f09b342632dbf79' }
+      }
+    )
+    return data
+  }
+}
+</script>
+<style scoped>
+code {
+    padding: 0.2em 0.3em;
+    margin: 0 0.2em;
+    border-radius: 5px;
+    background: #f1f2f3;
+    color: #404040;
+    font-size: 0.9em;
+}
+
+</style>
