@@ -67,8 +67,8 @@ export default {
     padding: 0.2em 0.3em;
     margin: 0 0.2em;
     border-radius: 5px;
-    background: #f1f2f3;
-    color: #404040;
+    background: #111111;
+    color: #ffffff;
     font-size: 0.9em;
   }
 }

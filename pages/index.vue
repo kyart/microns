@@ -1,11 +1,17 @@
 <template>
-  <ul>
-    <li v-for="content in contents" :key="content.id">
-      <nuxt-link :to="`/${content.id}`">
-        {{ content.title }}
-      </nuxt-link>
-    </li>
-  </ul>
+  <div class="container">
+    <h1 class="title">
+      記事リスト
+    </h1>
+    <ul>
+      <li v-for="content in contents" :key="content.id">
+        <nuxt-link :to="`/${content.id}`">
+          {{ content.title }}
+        </nuxt-link>
+      </li>
+    </ul>
+  </div>
+
 </template>
 
 <script>
