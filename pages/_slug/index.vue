@@ -5,6 +5,9 @@
     <div class="post" v-html="content"></div>
     <hr>
     <p class="publishedAt">{{ publishedAt }}</p>
+    <p>
+      <nuxt-link to="/">戻る</nuxt-link>
+    </p>
   </main>
 </template>
 
