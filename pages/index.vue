@@ -18,6 +18,7 @@
 import axios from 'axios'
 
 export default {
+  layout:'products',
   async asyncData({ params }) {
     const { data } = await axios.get(
       'https://northernscript.microcms.io/api/v1/blogs',
