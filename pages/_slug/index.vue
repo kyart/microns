@@ -66,11 +66,13 @@ export default {
     list-style-type: decimal;
     list-style-position: inside;
   }
+  pre {
+    background: #111111;
+  }
   code {
     padding: 0.2em 0.3em;
     margin: 0 0.2em;
     border-radius: 5px;
-    background: #111111;
     color: #ffffff;
     font-size: 0.9em;
   }
