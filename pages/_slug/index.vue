@@ -1,6 +1,6 @@
 <template>
   <main class="main">
-    <h1 class="title">{{ title }}</h1>
+    <h1 class="title">記事タイトル：{{ title }}</h1>
     <img :src="eyecatch.url"/>
     <div class="post" v-html="content"></div>
     <hr>
