@@ -1,17 +1,22 @@
 <template>
-  <h1>Products Information</h1>
+  <div class="container">
+    <NuxtLogo/>
+    <h1>Products Information</h1>
+  </div>
 </template>
 
 <script>
+import NuxtLogo from '/components/NuxtLogo'
+
 export default {
-  name: "index"
+  name: "index",
+  components:{
+    NuxtLogo
+  },
+
 }
 </script>
 
 <style scoped>
-  h1 {
-    margin-bottom: 20px;
-    font-size: 2rem;
-  }
 
 </style>
