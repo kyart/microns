@@ -1,5 +1,7 @@
 <template>
   <div class="container">
+    <img src="https://res.cloudinary.com/kyart2036/image/upload/v1658683970/ns-banner_cnpuhr.png"/>
+
     <h1 class="title">
       記事リスト
     </h1>
